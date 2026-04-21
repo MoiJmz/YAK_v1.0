@@ -1,0 +1,70 @@
+﻿./gradlew.bat : 
+At line:1 char:1
++ ./gradlew.bat 
+assembleDebug 
+--console=plain > 
+build_output_2.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (:String) [],    
+ RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+FAILURE: Build failed 
+with an exception.
+
+* What went wrong:
+A problem occurred 
+configuring project 
+':app'.
+> com.android.builder.e
+rrors.EvalIssueExceptio
+n: Using 
+kotlin.sourceSets DSL 
+to add Kotlin sources 
+is not allowed with 
+built-in Kotlin.
+  Kotlin source set 
+'debug' contains: [C:\U
+sers\Administrator\Docu
+ments\yak\app\build\gen
+erated\ksp\debug\kotlin
+, C:\Users\Administrato
+r\Documents\yak\app\bui
+ld\generated\ksp\debug\
+java]
+  Solution: Use 
+android.sourceSets DSL 
+instead.
+  For more 
+information, see https:
+//developer.android.com
+/r/tools/built-in-kotli
+n
+  To suppress this 
+error, set android.disa
+llowKotlinSourceSets=fa
+lse in 
+gradle.properties.
+
+* Try:
+> Run with 
+--stacktrace option to 
+get the stack trace.
+> Run with --info or 
+--debug option to get 
+more log output.
+> Run with --scan to 
+generate a Build Scan 
+(powered by 
+Develocity).
+> Get more help at http
+s://help.gradle.org.
+
+BUILD FAILED in 1s

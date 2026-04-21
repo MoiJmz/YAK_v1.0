@@ -1,0 +1,18 @@
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'C:\Users\Administrator\Documents\yak\app\build.gradle.kts' line: 1
+
+* What went wrong:
+An exception occurred applying plugin request [id: 'com.android.application', version: '9.0.1']
+> Failed to apply plugin 'com.android.internal.application'.
+   > Cannot parse project property android.nonTransitiveRClass='trueandroid.disallowKotlinSourceSets=false' of type 'class java.lang.String' as boolean. Expected 'true' or 'false'.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 877ms
