@@ -21,6 +21,7 @@ abstract class YakDatabase : RoomDatabase() {
         fun getInstance(context: Context): YakDatabase {
             return INSTANCE ?: synchronized(this) {
                 Room.databaseBuilder(context.applicationContext, YakDatabase::class.java, "yak_db")
+                    .fallbackToDestructiveMigration()
                     .allowMainThreadQueries()
                     .build().also { INSTANCE = it }
             }
